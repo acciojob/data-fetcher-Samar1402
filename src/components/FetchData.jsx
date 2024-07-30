@@ -22,12 +22,13 @@ function FetchData() {
     // console.log(res);
   }, []);
   // console.log(data);
-  if (loading) return <p>Loading...</p>;
-  if (error) return <p>Error: {error}</p>;
+  // if (loading) return <p>Loading...</p>;
+  // if (error) return <p>An error occurred: {error}</p>;
   return (
     <div>
       <h1>Data Fetched from API</h1>
-      {/* {loading ? <p>Loading...</p> : <p>An error occurred: {error}</p>} */}
+      {loading ? <p>Loading...</p> : <p>An error occurred: {error}</p>}
+
       <pre>{data && JSON.stringify(data)}</pre>
     </div>
   );
