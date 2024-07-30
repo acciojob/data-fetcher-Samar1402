@@ -1,13 +1,14 @@
-
 import React from "react";
-import './../styles/App.css';
+// import "./../styles/App.css";
+import axios from "axios";
+import FetchData from "./FetchData";
 
-const App = () => {
+function App() {
   return (
     <div>
-        {/* Do not remove the main div */}
+      <FetchData></FetchData>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
